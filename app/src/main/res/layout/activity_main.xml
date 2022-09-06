@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="end"
+                android:textSize="38dp"
+                android:textColor="@color/samcolor"
+                android:textColorHint="@color/purple_500"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:autoSizeMinTextSize="38dp"
+                android:autoSizeMaxTextSize="100dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2dp"
+                android:layout_above="@id/result"
+
+                 />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+               android:layout_margin="10dp"
+                android:gravity="end|center_vertical"
+                android:text=""
+                android:textColor="@color/samcolor"
+                android:textColorHint="@color/purple_500"
+               android:layout_alignParentBottom="true"
+                android:textSize="38dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/numpad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardMaxElevation="15dp"
+                app:cardCornerRadius="10dp"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white"
+                android:onClick="num7">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="7"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num8"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:neumorph_shadowColorDark="@color/sam"
+                android:onClick="divide"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="/"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/black"
+                android:onClick="cancelbtn">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="x"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/samcolor"
+                    android:textSize="55dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:clickable="true"
+           android:focusable="true"
+           app:cardMaxElevation="15dp"
+           app:cardCornerRadius="10dp"
+           app:neumorph_shadowColorDark="@color/sam"
+           app:neumorph_shadowColorLight="@color/white"
+           android:onClick="num7">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="7"
+               android:textSize="39dp"
+               android:textColor="@color/black"
+               android:gravity="center"
+               android:textStyle="bold"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="num8"
+            app:neumorph_shadowColorDark="@color/sam"
+            app:neumorph_shadowColorLight="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:textSize="39dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:neumorph_shadowColorDark="@color/sam"
+            android:onClick="num9"
+            app:neumorph_shadowColorLight="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="39dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+           android:background="@color/black"
+            android:onClick="cancelbtn">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+              android:text="x"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:textColor="@color/samcolor"
+               android:textSize="55dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num4"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num5"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="5"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num6"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@color/black"
+                android:focusable="true"
+                android:onClick="minus">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textSize="55dp"
+                    android:gravity="center"
+                    android:textColor="@color/samcolor"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="num1"
+                android:focusable="true"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="39dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="num2"
+                android:focusable="true"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num3"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="addition"
+               android:background="@color/black">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textColor="@color/samcolor"
+                    android:textSize="55dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="multiplication"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="x"
+                    android:textSize="45dp"
+                    android:textColor="@color/samcolor"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/btn_0"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="num0"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="39dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="dot"
+                android:focusable="true"
+                app:neumorph_shadowColorDark="@color/sam"
+                app:neumorph_shadowColorLight="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="."
+                    android:textSize="55dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="equal"
+
+                android:focusable="true"
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="="
+                    android:textColor="@color/samcolor"
+                    android:textSize="55dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
